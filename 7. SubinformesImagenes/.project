@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyReports</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>net.sf.jasperreports.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>net.sf.jasperreports.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Agenda.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/joaquin/Desktop/T5Destrang/Ejercicio8/Ejercicio 11/Agenda/Agenda.jrxml</location>
+		</link>
+		<link>
+			<name>Contactos.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/joaquin/Desktop/Joaquin/DESARROLLADOR MULTIPLATAFORMA/SEGUNDO/DESARROLLO DE INTERFACES/DI_T5A_MonteroJoaquin/7. SubinformesImagenes/Contactos.jrxml</location>
+		</link>
+		<link>
+			<name>subinforme1.jrxml..jrxml</name>
+			<type>1</type>
+			<location>C:/Users/joaquin/Desktop/Joaquin/DESARROLLADOR MULTIPLATAFORMA/SEGUNDO/DESARROLLO DE INTERFACES/DI_T5A_MonteroJoaquin/7. SubinformesImagenes/subinforme1.jrxml..jrxml</location>
+		</link>
+	</linkedResources>
+</projectDescription>

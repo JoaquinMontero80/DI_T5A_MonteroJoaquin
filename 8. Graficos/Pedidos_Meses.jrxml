@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Graficos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a32bf91a-ad00-4746-b0c0-63705fed3e98">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT count(*) PEDIDOS, 
+YEAR(ORDERDATE) ANNO,
+ MONTH(ORDERDATE) MES 
+ FROM ORDERS GROUP BY YEAR(ORDERDATE), 
+ MONTH(ORDERDATE) 
+ order by YEAR(ORDERDATE), 
+ MONTH(ORDERDATE)]]>
+	</queryString>
+	<field name="PEDIDOS" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="PEDIDOS"/>
+	</field>
+	<field name="ANNO" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ANNO"/>
+	</field>
+	<field name="MES" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="MES"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="438" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="79" forecolor="#C72222" uuid="32119bae-646a-49b6-a08f-9bde6b068a44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gráfico de PEDIDOS por año y mes]]></text>
+			</staticText>
+			<bar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="-3" y="70" width="560" height="246" uuid="6814eee2-a4de-4ed5-8ef5-2a953dc0dc9a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset resetType="Report"/>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{ANNO}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{MES}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{PEDIDOS}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot foregroundAlpha="1.0"/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="336" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
