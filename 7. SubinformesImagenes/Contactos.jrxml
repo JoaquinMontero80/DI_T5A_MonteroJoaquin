@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Contactos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1e59bc5-1b49-40e6-9ba3-d2830c76f1de">
-	<property name="com.jaspersoft.studio.data.sql.tables" value="IkNPTlRBQ1RPUyIgLDE1LDE1LDYxNDdlMjQxLTY2ODktNDNlZS1iY2MwLTllZWMxYzI3ZTliODs="/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="Q09OVEFDVE9TICwxNSwxNSxmOGJkNTE0Ny05N2M2LTQ0MmEtOGE0NS0yMmQxNTc0Y2Y2NzE7"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="contactos "/>
 	<queryString language="SQL">
 		<![CDATA[SELECT *
-FROM "CONTACTOS"]]>
+FROM CONTACTOS]]>
 	</queryString>
 	<field name="ID" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.label" value="ID"/>
